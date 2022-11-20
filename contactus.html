@@ -1,0 +1,72 @@
+ <!doctype html>
+ <html>
+ <head>
+     <title>Contact Us | Coqniteq</title>
+	 <link rel="stylesheet" href="style.css">
+	 <script src="https://kit.fontawesome.com/b1c34f1217.js" crossorigin="anonymous"></script>
+	 <style>
+	.input-group
+	{
+	margin-bottom: 30px;
+	position: relative;
+	}
+	input, textarea
+	{
+	width: 100%;
+	padding: 10px;
+	outline: 0;
+	border: 1px solid #fff;
+	color: #fff;
+	background: transparent;
+	font-size: 15px;
+	}
+	input:focus~label,
+    input:valid~label,
+    textarea:focus~label,
+    textarea:valid~label
+	{
+	top: -35px;
+	font-size: 14px;
+    }
+    .row
+	{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+    }
+    .row .input-group
+	{
+	flex-basis: 48%;
+	}
+    </style>
+ </head>
+ <body>
+ 
+ <div class="hero">
+	  
+ <form style="width: 90%; max-width: 600px;">
+     <div class="row">
+         <div class="input-group">
+             <input type="text" id="name" required>
+	         <label or="name"><i class="fa-solid fa-user"></i> Your Name</label>
+	     </div>
+	     <div class="input-group">
+             <input type="text" id="number" required>
+	         <label for="number"><i class="fa-solid fa-square-phone"></i> Phone No.</label>
+		 </div>
+	 </div>
+	 
+	 <div class="input-group">
+         <input type="email" id="email" required>
+	     <label for="email"><i class="fa-solid fa-envelope"></i> Email Id</label>
+	 </div>
+	 <div class="input-group">
+        <textarea id="message" rows="8" required></textarea>
+	      <label or="message"><i class="fa-solid fa-message"></i> Your Message</label>
+	 </div>
+	 <button style="padding: 10px 0; color: #fff; outline: none; background: transparent; border: 1px solid #fff; width: 100%; cursor: pointer;"
+	 type="submit">SUBMIT <i class="fa-solid fa-paper-plane"></i></button>
+ </form>
+</body>
+
+</html>
